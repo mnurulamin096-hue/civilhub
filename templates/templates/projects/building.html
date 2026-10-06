@@ -3,24 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Building Design | CivilHub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f6fa;
+            color: #1f2937;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 18px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 280px;
+            background: #e5e7eb;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: #6b7280;
+            font-size: 18px;
+        }
+
+        .project-title {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            color: #6b7280;
+            margin-bottom: 25px;
+        }
+
+        .details {
+            display: grid;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .detail {
+            background: #f8fafc;
+            padding: 14px;
+            border-radius: 8px;
+        }
+
+        .detail strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+        }
+
+        .back-btn:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            color: #6b7280;
+            padding: 25px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Building Design</h1>
+    <header>
+        <h1>CivilHub</h1>
+    </header>
 
-    <p>This is my Civil Engineering building design project.</p>
+    <main class="container">
 
-    <h2>Project Details</h2>
+        <div class="project-card">
 
-    <ul>
-        <li>Project Type: Building Design</li>
-        <li>Software: AutoCAD</li>
-        <li>Student: Tanzil</li>
-    </ul>
+            <!-- Project Image Area -->
+            <div class="project-image">
+                Project Image / Preview
+            </div>
 
-    <a href="/">← Back to CivilHub</a>
+            <h2 class="project-title">Building Design</h2>
+
+            <p class="description">
+                A Civil Engineering building design project created
+                for learning and practical design experience.
+            </p>
+
+            <div class="details">
+
+                <div class="detail">
+                    <strong>Project Type</strong>
+                    Building Design
+                </div>
+
+                <div class="detail">
+                    <strong>Software</strong>
+                    AutoCAD
+                </div>
+
+                <div class="detail">
+                    <strong>Student</strong>
+                    Tanzil
+                </div>
+
+                <div class="detail">
+                    <strong>Category</strong>
+                    Civil Engineering
+                </div>
+
+            </div>
+
+            <a href="/" class="back-btn">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 CivilHub
+    </footer>
 
 </body>
-</html>
+    </html>
