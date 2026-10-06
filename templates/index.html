@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CivilHub | Tanzil's Portfolio</title>
+    <title>Tanzil | Civil Engineering Portfolio</title>
 
     <style>
         * {
@@ -17,135 +17,153 @@
             font-family: Arial, sans-serif;
             background: #f5f7fa;
             color: #1f2937;
-            line-height: 1.6;
         }
 
         header {
             background: #111827;
-            color: white;
-            padding: 18px 8%;
+            padding: 18px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
         }
 
         .logo {
-            font-size: 25px;
+            color: white;
+            font-size: 24px;
             font-weight: bold;
         }
 
         nav a {
-            color: white;
+            color: #d1d5db;
             text-decoration: none;
             margin-left: 20px;
-            font-size: 15px;
+            font-size: 14px;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: white;
         }
 
         .hero {
-            background: white;
-            text-align: center;
-            padding: 80px 20px;
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+            padding: 60px 7%;
+            background: linear-gradient(135deg, #111827, #1e3a5f);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero small {
+            color: #93c5fd;
+            font-size: 15px;
         }
 
         .hero h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
+            font-size: 48px;
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #60a5fa;
         }
 
         .hero p {
-            color: #6b7280;
-            max-width: 650px;
-            margin: auto;
-            font-size: 17px;
+            color: #d1d5db;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 28px;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 24px;
+            padding: 13px 22px;
             background: #2563eb;
             color: white;
             text-decoration: none;
             border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #60a5fa;
         }
 
         section {
-            max-width: 1100px;
-            margin: auto;
-            padding: 60px 20px;
+            padding: 70px 7%;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 35px;
-            font-size: 30px;
+            font-size: 32px;
+            margin-bottom: 40px;
         }
 
         .about {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
+            max-width: 850px;
+            margin: auto;
             text-align: center;
+            line-height: 1.8;
+            color: #6b7280;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .skill {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
         }
 
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
         }
 
-        .project-card {
+        .project {
             background: white;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
         }
 
-        .project-card h3 {
+        .project h3 {
             margin-bottom: 10px;
         }
 
-        .project-card p {
+        .project p {
             color: #6b7280;
-            margin-bottom: 20px;
-        }
-
-        .project-link {
-            display: inline-block;
-            padding: 10px 16px;
-            background: #111827;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 14px;
+            line-height: 1.6;
         }
 
         footer {
             background: #111827;
-            color: #d1d5db;
+            color: #9ca3af;
             text-align: center;
             padding: 25px;
-            margin-top: 30px;
         }
 
         @media (max-width: 600px) {
-            header {
-                text-align: center;
-                justify-content: center;
-                gap: 12px;
+            .hero h1 {
+                font-size: 36px;
             }
 
             nav a {
-                margin: 0 8px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
+                margin-left: 8px;
+                font-size: 12px;
             }
         }
     </style>
@@ -153,107 +171,119 @@
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">CivilHub</div>
+<header>
+    <div class="logo">CivilHub</div>
 
-        <nav>
-            <a href="/">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header>
 
+<section class="hero">
 
-    <!-- Hero -->
-    <div class="hero">
-        <h1>My Civil Engineering Portfolio</h1>
+    <div class="hero-content">
+
+        <small>CIVIL ENGINEERING PORTFOLIO</small>
+
+        <h1>
+            Hi, I'm <span>Tanzil</span>
+        </h1>
 
         <p>
-            Welcome to my CivilHub portfolio. Here I showcase my
-            Civil Engineering projects, drawings, designs and technical work.
+            A Civil Engineering student building my skills in
+            design, construction, technology and practical engineering.
         </p>
 
-        <a href="#projects" class="btn">View My Projects</a>
+        <a href="#projects" class="btn">
+            View My Projects
+        </a>
+
+        <a href="#about" class="btn btn-outline">
+            About Me
+        </a>
+
     </div>
 
+</section>
 
-    <!-- About -->
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
+<section id="about">
 
-        <div class="about">
-            <h3>Tanzil</h3>
+    <h2 class="section-title">About Me</h2>
 
+    <div class="about">
+
+        <p>
+            I am a Civil Engineering student interested in
+            engineering design, AutoCAD, construction,
+            surveying and modern technology.
+        </p>
+
+        <p>
+            This website is my personal portfolio where I will
+            showcase my learning, projects and future work.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">AutoCAD</div>
+        <div class="skill">Civil Engineering</div>
+        <div class="skill">Technical Drawing</div>
+        <div class="skill">Basic 3D Modeling</div>
+        <div class="skill">Surveying</div>
+        <div class="skill">Computer Skills</div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Building Design</h3>
             <p>
-                I am a Civil Engineering student interested in
-                building design, AutoCAD, surveying, 3D modelling
-                and other Civil Engineering projects.
+                A building design project showcasing
+                basic Civil Engineering design concepts.
             </p>
         </div>
-    </section>
 
-
-    <!-- Projects -->
-    <section id="projects">
-        <h2 class="section-title">My Projects</h2>
-
-        <div class="projects">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <h3>Building Design</h3>
-
-                <p>
-                    A basic Civil Engineering building design project
-                    created using AutoCAD.
-                </p>
-
-                <a
-                    href="/project/building-design"
-                    class="project-link">
-                    View Project
-                </a>
-            </div>
-
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h3>AutoCAD Drawing</h3>
-
-                <p>
-                    Technical drawing and drafting project for
-                    Civil Engineering practice.
-                </p>
-
-                <a href="#" class="project-link">
-                    Coming Soon
-                </a>
-            </div>
-
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <h3>3D Model</h3>
-
-                <p>
-                    A Civil Engineering 3D modelling and visualization
-                    project.
-                </p>
-
-                <a href="#" class="project-link">
-                    Coming Soon
-                </a>
-            </div>
-
+        <div class="project">
+            <h3>AutoCAD Drawing</h3>
+            <p>
+                Technical drawings and CAD-based
+                Civil Engineering work.
+            </p>
         </div>
-    </section>
 
+        <div class="project">
+            <h3>3D Model</h3>
+            <p>
+                Future 3D modeling projects will be
+                showcased here.
+            </p>
+        </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 CivilHub | Tanzil's Civil Engineering Portfolio</p>
-    </footer>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 CivilHub — Tanzil's Civil Engineering Portfolio
+</footer>
 
 </body>
 </html>
