@@ -7,10 +7,10 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/project/building-design")
-def building_design():
-    return render_template("projects/building.html")
 
+@app.route("/project/building-design")
+def building():
+    return render_template("projects/building.html")
 
 
 if __name__ == "__main__":
