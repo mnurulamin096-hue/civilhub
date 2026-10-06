@@ -10,7 +10,7 @@ def home():
 
 @app.route("/project/building-design")
 def building():
-    return render_template("projects/building.html")
+    return render_template("templates/projects/building.html")
 
 
 if __name__ == "__main__":
